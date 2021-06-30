@@ -1,43 +1,53 @@
 import validator from './validator.js'
-//console.log(validator);
+//creando variables
 let creditCard= document.getElementById("creditNumber");
 const validar= document.getElementById('btnValida'); 
-let btnVolver= document.getElementById("volver");
- const formulario= document.getElementById("formulario");
+const btnGood= document.getElementById("btnGood");
+const btnWrong= document.getElementById("btnWrong");
+const formulario= document.getElementById("formulario");
+//funcion para evitar espacios vacíos y números. 
 formulario.creditNumber.addEventListener('keyup', (e) => {
 	let valorCreditNumber = e.target.value;
-
 	formulario.creditNumber.value = valorCreditNumber
-	// Eliminamos espacios en blanco
+	// reemplaza espacios en blanco
 	.replace(/\s/g, '')
-	// Eliminar las letras
+	// reemplaza las letras
 	.replace(/\D/g, '')
-	// Ponemos espacio cada cuatro numeros
-	//.replace(/([0-9]{4})/g, '$1 ')
-	// Elimina el ultimo espaciado
-	.trim();
+     
 })
-    function mostrarOcultar(){
-        console.log(creditCard.value);
-     if(validator.isValid(creditCard.value)==true){
+//función de secciones con respecto a validación de tarjeta isValid
+function mostrarOcultar(){
+     if(creditCard.value===""|| creditCard.value.length<16){
+          document.getElementById('message').innerText= '¡Por Favor ingresa todo el número de tu tarjeta!';
+     } else{
+          let maskify= validator.maskify(creditCard.value);
+     
+          if(validator.isValid(creditCard.value)===true){
           document.getElementById('contenedor').style.display='none';
           document.getElementById('correctValidation').style.display='block';
+          document.getElementById('maskifyNumber').innerText= maskify;
+          
      }else{
           document.getElementById('contenedor').style.display='none';
           document.getElementById('wrongvalidation').style.display='block';
-          }
-     }
-     validar.addEventListener("click", mostrarOcultar);
+          document.getElementById('maskifyNumber_').innerText= maskify;
+       }
+     }   
+} 
+//llamando al click
+validar.addEventListener("click", mostrarOcultar);
 
-function volver (){
-     if(document.getElementById("correctValidation")){
-          document.getElementById("correctValidation").style.display="none";
-          document.getElementById("contenedor").style.display="block";
-     }else{
-          document.getElementById("correctValidation").style.display="none";
-          document.getElementById("contenedor").style.display="block";
-     }
-     
-}
+function botonesVolver1 (){
+     location.href='https://www.discovertheworld.com/';  
+} 
 
-btnVolver.addEventListener("click", volver);
+btnGood.addEventListener("click", botonesVolver1);
+
+
+function botonesVolver2 (){
+     document.getElementById('wrongvalidation').style.display='none';
+     document.getElementById('contenedor').style.display='block';  
+     formulario.reset();
+} 
+
+btnWrong.addEventListener("click", botonesVolver2);

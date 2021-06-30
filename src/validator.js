@@ -1,14 +1,16 @@
 const validator= {
   
   isValid: function(creditCard){
-    console.log(typeof creditCard);
+    
     let creditNumber= creditCard.split("");
+
+    
     let invertirCreditNumber = creditNumber.reverse();
 
     let suma=0;
   
     for(let i = 0; i<invertirCreditNumber.length;i++){
-      //para las posiciones pares
+      
       let numInverter= parseInt(invertirCreditNumber[i]);
      
       if(i%2!=0){
@@ -23,7 +25,6 @@ const validator= {
         }
       } else{ 
         numInverter;
-        console.log(numInverter);
     
       }
       suma=suma+numInverter;

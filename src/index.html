@@ -30,7 +30,7 @@
             <br>
             <form id="formulario">
             <label for="creditNumber">Número de Tarjeta: </label>
-            <input  maxlength="19" type="text" id="creditNumber" autocomplete="off" placeholder="xxxx-xxxx-xxxx-xxxx"><br><br>
+            <input  maxlength="16" type="text" id="creditNumber" autocomplete="off" placeholder="xxxx-xxxx-xxxx-xxxx"><br><br>
             <br>
             <label for="fv">Fecha de Vencimiento: </label> 
             <input id="fv" type="text"><br><br>
@@ -39,8 +39,9 @@
             <input type="text" id="cvv"><br><br>
             <br>
           </form>
+          <p id="message" class="ocultar"></p>
           <br>
-            <button type="button" id="btnValida" >Finalizar Compra </button>
+            <button type="button" id="btnValida" class="boton">Finalizar Compra </button>
             <br>
             <br>
           </div>
@@ -50,19 +51,20 @@
           <div class= "contenedorAnidado">
           <section id="correctValidation" class="ocultar">
             <br>
+            <div>
+            <h1 id="felicidades">¡Felicidades!</h1>
+            <p>Hemos concluído con el proceso de tu compra</p>
+          </div>
             <img id="good" src="imagenes/goodvalidation.gif" alt="CORRECT">
             <div>
               <h1>Número de Tarjeta: </h1>
-              
+              <p id="maskifyNumber"></p>
+              <br>
+              <p id="isValid">¡Es válido!</p>
             </div>
             <br>
-            <h1>¡Felicidades!</h1>
-            <hr>
             <br>
-            <p>Hemos concluído con el proceso de tu compra</p>
-            <img id="final" src="imagenes/goodfinal.jpg" alt="machupicchu"> 
-            <br>
-            <button type="button" class="volver"> volver </button>
+            <button type="button" class="boton" id="btnGood" > volver </button>
             <br>
           </section>
         </div>
@@ -70,13 +72,20 @@
   
            <section id="wrongvalidation" class="ocultar">
             <br>
+              <h2 id="loSentimos">Lo Sentimos</h2>
+              <br>
+              <h1>No hemos podido concluir tu proceso de compra</h1>
+              <br>
               <img id="bad" src="imagenes/badvalidation.gif" alt="wrong">
-              <h1>Vuelve a ingresar el número de tu tarjeta</h1>
+              <br>
               <div>
-                <h1>Número de Tarjeta: </h1>
+                <p>Número de Tarjeta: </p>
+                <p id="maskifyNumber_"></p>
+                <br>
+                <p id="isNotValid">¡No es válido!</p>
               </div>
               <br>
-              <button type="button" class="volver" id="volver"> volver </button>
+              <button type="button" class="boton" id="btnWrong"> volver </button>
               <br>
               <br>
            </section>

@@ -2,15 +2,30 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+
+* [1. Resumen del proyecto](#2-resumen-del-proyecto)  
+En este proyecto se construyó una aplicación web que le permita a un usuario validar el número de una tarjeta de crédito mediante el algoritmo de Luhn. Además, se implementó funcionalidad para ocultar todos los dígitos de una tarjeta menos los últimos cuatro.
+
+
+* [2. Imagen del proyecto](#2-resumen-del-proyecto)   
+ ![Alt text](imagenes/Diapositiva1.png)
+ ![Alt text](imagenes/Diapositiva2.png)
+ ![Alt text](imagenes/Diapositiva3.png)
+
+
+* [3. Investigación UX](#2-resumen-del-proyecto)   
+los clientes de la agencia de viajes son nuestro público objetivo, los usuarios que deseen pagar sus boletos de avion podrán hacerlo a través del aplicativo. El cual, busca brindarles un sistema fácil de emplear, que sea intuitivo, rápido y eficaz en su misión, para lograr generar el pago de manera virtual y segura.  
+En líneas generales nuestro aplicativo facilita a los usuarios, ahorrandoles hacer colas, tener que cargar efectivo y lo mejor de todo es que pueden realizarlo desde cualquier lugar del Perú. 
+
+* [4. Imagen de mi Primer Prototipo](#2-resumen-del-proyecto) 
+![Alt text](imagenes/prototipo.jpeg)
+![Alt text](imagenes/prototipo1.jpeg)
+![Alt text](imagenes/prototipo2.jpeg)
+
+* [5. Feedback ](#5-Feedback)
+las mejoras que podría realizar a nivel del diseño serían con respecto al color y la interactividad de la tarjeta de modelo para que el usurario pueda identificar rapidamente donde encontrar los datos requeridos en su tarjeta de credito. 
+Con respecto a la estructura del código, para hacerlo más funcional y reducir muchas líneas de él, me comprometo a aprender nuevos métodos y atributos que me puedan facilitar en conseguir esa meta. 
+
 
 ***
 
