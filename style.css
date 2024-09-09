@@ -1,0 +1,201 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: blanchedalmond ;
+    background-size: 120%;
+    height: 100%;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(7,172,32,1) 0%, rgba(123,222,105,1) 39%, rgba(0,255,154,0.6530987394957983) 100%); 
+    font-weight: bold ;
+    color: #141414;
+    font-size: 400%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0%;
+    height: 150px;
+}
+
+.slogan{
+    font-style: italic;
+    font-size: 35%;
+    color: white;
+    }
+
+#discoverTheWorld:hover{
+    color:violet;
+}
+
+#avion:hover{
+color:rgb(98, 0, 128);
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(90deg, rgba(7,172,32,1) 0%, rgba(123,222,105,1) 39%, rgba(0,255,154,0.6530987394957983) 100%); 
+    font-weight: bold ;
+    color: #141414;
+    font-size: 110%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 50px;
+}
+
+#information2{
+    text-align: center;
+    font-style: normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contenedor{
+    text-align: center;
+    font-style: normal;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    display: block;
+    background: linear-gradient(90deg, rgba(167,238,178,0.7287289915966386) 0%, rgba(182,230,173,0.6643032212885154) 46%, rgba(94,215,94,0.5886729691876751) 100%);
+
+}
+
+#correctValidation{
+   display: none;
+   background-color: white;
+}
+
+#wrongvalidation{
+    display:none;
+    background-color: white;
+}
+
+
+#credit {
+    width: 15%;
+    height: 15%;
+}
+
+
+
+form{
+    text-align: center;
+    font-size: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+p{
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 100%;
+}
+
+input{
+    text-align: center;
+    font-size: 150%;
+    border-color: yellowgreen;
+    }
+
+#btnvalida{
+    border: black;
+    background:chartreuse; 
+    font-weight: bold;
+    font-size: 120%;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+#btnvalida:holder{
+    color:green;
+}
+
+#final{
+    width: 25%;
+    height: 30%;
+    border-radius: 15%; 
+}
+.oculta{
+    display:none;
+
+}
+
+.contenedorAnidado{
+    background-color:white;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+#good{
+    width: 20%;
+    height: 25%; 
+    
+}
+
+#bad{
+    width: 20%;
+    height: 25%; 
+    
+}
+
+#correctValidation{
+    text-align: center;
+
+}
+
+#ocultar{
+    display: none;
+}
+
+
+.boton{
+    border-radius: 6px; 
+    background-color: #C6F118; 
+    color: black;
+    border-radius: 6px; 
+    font-size: 100%;
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
+
+
+.boton:hover {
+    background-color: #C6F118;
+    background-color: rgb(16, 202, 72);
+}
+
+#message{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: darkblue, 30%;
+    background: aquamarine ;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+#felicidades, #loSentimos{
+    font-weight: bold;
+    font-size: 300%;
+}
+
+#isValid, #isNotValid{
+    font-weight: bold;
+    font-size: 95%;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-bottom: 1%;
+}
+
+#maskifyNumber, #maskifyNumber_{
+    background-color: yellow;
+    margin-left: 43%;
+    margin-right: 43%;
+}
+
